@@ -124,7 +124,7 @@ def dailystat():
     #     st.write(' ') 
 
 
-    df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/dailybreakdown.csv", sep="|")
+    df = pd.read_csv("dailybreakdown.csv", sep="|")
 
     option = st.selectbox(
         'Total Transferred:',
