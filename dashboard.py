@@ -157,7 +157,7 @@ def dailystat():
 
     # Breakdown of no. of entities & services at different times of day -> line graph
 
-    df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/dailybreakdown.csv", sep="|")
+    df = pd.read_csv("dailybreakdown.csv", sep="|")
 
     option1 = st.selectbox(
         'Total Communicated:',
