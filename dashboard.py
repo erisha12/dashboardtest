@@ -198,14 +198,14 @@ def dailystat():
         ('Technical', 'High-Level'))
 
     if (option1 == 'Technical'):
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/dailysankey.csv", sep="|")
+        df = pd.read_csv("dailysankey.csv", sep="|")
         cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
         fig = genSankey(df,cat,"byte", '')
 
         st.plotly_chart(fig,use_container_width=True)
 
     elif (option1 == 'High-Level'):
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/highleveldailysankey.csv", sep="|")
+        df = pd.read_csv("highleveldailysankey.csv", sep="|")
         cat = ["UNSW EE Building", "day", "service", "org", "country"]
         fig = genSankey(df,cat,"byte", '')
     
@@ -232,7 +232,7 @@ def dailystat():
     
     if (option2 == 'Morning'):
        
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburst09308-10.csv", sep="|")
+        df = pd.read_csv("csventitiesunburst09308-10.csv", sep="|")
     
         df["time"] = "Morning"
         df = df.reset_index()
@@ -247,7 +247,7 @@ def dailystat():
 
     elif (option2 == 'Midday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburst093011-13.csv", sep="|")
+        df = pd.read_csv("csventitiesunburst093011-13.csv", sep="|")
     
         df["time"] = "Midday"
         df = df.reset_index()
@@ -262,7 +262,7 @@ def dailystat():
     
     elif (option2 == 'Afternoon'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburst093014-16.csv", sep="|")
+        df = pd.read_csv("csventitiesunburst093014-16.csv", sep="|")
     
         df["time"] = "Afternoon"
         df = df.reset_index()
@@ -277,7 +277,7 @@ def dailystat():
     
     elif (option2 == 'Evening'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburst093017-19.csv", sep="|")
+        df = pd.read_csv("csventitiesunburst093017-19.csv", sep="|")
     
         df["time"] = "Evening"
         df = df.reset_index()
@@ -321,7 +321,7 @@ def dailystat():
     
     if (option3 == 'Morning'):
 
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburst09308-10.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburst09308-10.csv", sep="|")
     
         df["time"] = "Morning"
         df = df.reset_index()
@@ -336,7 +336,7 @@ def dailystat():
 
     elif (option3 == 'Midday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburst093011-13.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburst093011-13.csv", sep="|")
     
         df["time"] = "Midday"
         df = df.reset_index()
@@ -351,7 +351,7 @@ def dailystat():
     
     elif (option3 == 'Afternoon'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburst093014-16.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburst093014-16.csv", sep="|")
     
         df["time"] = "Afternoon"
         df = df.reset_index()
@@ -366,7 +366,7 @@ def dailystat():
     
     elif (option3 == 'Evening'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburst093017-19.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburst093017-19.csv", sep="|")
     
         df["time"] = "Evening"
         df = df.reset_index()
@@ -434,7 +434,7 @@ def weeklystat():
     #     st.write(' ') 
         
 
-    df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/weeklybreakdown.csv", sep="|")
+    df = pd.read_csv("weeklybreakdown.csv", sep="|")
 
     option = st.selectbox(
         'Total Transferred:',
@@ -467,7 +467,7 @@ def weeklystat():
 
     # Breakdown of no. of entities & services at different times of day -> line graph
 
-    df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/weeklybreakdown.csv", sep="|")
+    df = pd.read_csv("weeklybreakdown.csv", sep="|")
 
     option1 = st.selectbox(
         'Total Communicated:',
@@ -508,14 +508,14 @@ def weeklystat():
         ('Technical', 'High-Level'))
 
     if (option1 == 'Technical'):
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/weeklysankey.csv", sep="|")
+        df = pd.read_csv("weeklysankey.csv", sep="|")
         cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
         fig = genSankey(df,cat,"byte", '')
 
         st.plotly_chart(fig,use_container_width=True)
 
     elif (option1 == 'High-Level'):
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/highlevelweeklysankey.csv", sep="|")
+        df = pd.read_csv("highlevelweeklysankey.csv", sep="|")
         cat = ["UNSW EE Building", "day", "service", "org", "country"]
         fig = genSankey(df,cat,"byte", '')
     
@@ -545,7 +545,7 @@ def weeklystat():
     
     if (option2 == 'Monday'):
 
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburstmonday.csv", sep="|")
+        df = pd.read_csv("csventitiesunburstmonday.csv", sep="|")
     
         df["time"] = "Monday"
         df = df.reset_index()
@@ -560,7 +560,7 @@ def weeklystat():
 
     elif (option2 == 'Tuesday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunbursttuesday.csv", sep="|")
+        df = pd.read_csv("csventitiesunbursttuesday.csv", sep="|")
     
         df["time"] = "Tuesday"
         df = df.reset_index()
@@ -575,7 +575,7 @@ def weeklystat():
     
     elif (option2 == 'Wednesday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburstwednesday.csv", sep="|")
+        df = pd.read_csv("csventitiesunburstwednesday.csv", sep="|")
     
         df["time"] = "Wednesday"
         df = df.reset_index()
@@ -590,7 +590,7 @@ def weeklystat():
     
     elif (option2 == 'Thursday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburstthursday.csv", sep="|")
+        df = pd.read_csv("csventitiesunburstthursday.csv", sep="|")
     
         df["time"] = "Thursday"
         df = df.reset_index()
@@ -605,7 +605,7 @@ def weeklystat():
     
     elif (option2 == 'Friday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csventitiesunburstfriday.csv", sep="|")
+        df = pd.read_csv("csventitiesunburstfriday.csv", sep="|")
     
         df["time"] = "Friday"
         df = df.reset_index()
@@ -647,7 +647,7 @@ def weeklystat():
     
     if (option3 == 'Monday'):
 
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburstmonday.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburstmonday.csv", sep="|")
     
         df["time"] = "Monday"
         df = df.reset_index()
@@ -662,7 +662,7 @@ def weeklystat():
 
     elif (option3 == 'Tuesday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunbursttuesday.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunbursttuesday.csv", sep="|")
     
         df["time"] = "Tuesday"
         df = df.reset_index()
@@ -677,7 +677,7 @@ def weeklystat():
     
     elif (option3 == 'Wednesday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburstwednesday.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburstwednesday.csv", sep="|")
     
         df["time"] = "Wednesday"
         df = df.reset_index()
@@ -692,7 +692,7 @@ def weeklystat():
     
     elif (option3 == 'Thursday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburstthursday.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburstthursday.csv", sep="|")
     
         df["time"] = "Thursday"
         df = df.reset_index()
@@ -707,7 +707,7 @@ def weeklystat():
     
     elif (option3 == 'Friday'):
         
-        df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/csvfiles/csvdailytimesunburstfriday.csv", sep="|")
+        df = pd.read_csv("csvdailytimesunburstfriday.csv", sep="|")
     
         df["time"] = "Friday"
         df = df.reset_index()
