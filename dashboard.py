@@ -135,27 +135,25 @@ def dailystat():
         ('Bytes', 'Packets'))
 
     if (option == 'Bytes'):
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['byte'], color_discrete_sequence =['skyblue'],
-                            labels={'x': 'Time of Day', 'y':'No. of Bytes (GB)'}))
+            image = Image.open('dailybyte.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
-            st.write(' ') 
+            st.write(' ')  
 
     elif (option == 'Packets'):
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['packet'], color_discrete_sequence =['skyblue'],
-                            labels={'x': 'Time of Day', 'y':'No. of Packets'}))
+            image = Image.open('dailypacket.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
             st.write(' ') 
         
 
@@ -168,28 +166,26 @@ def dailystat():
         ('Entities', 'Services'))
 
     if (option1 == 'Entities'):
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['orgs'], color_discrete_sequence =['plum'],
-                            labels={'x': 'Time of Day', 'y':'No. of Entities'}))
+            image = Image.open('dailyentity.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
-            st.write(' ') 
+            st.write(' ')  
 
     elif (option1 == 'Services'):
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['ports'], color_discrete_sequence =['plum'],
-                            labels={'x': 'Time of Day', 'y':'No. of Services'}))
+            image = Image.open('dailyservice.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
-            st.write(' ') 
+            st.write(' ')  
 
 
 
