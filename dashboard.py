@@ -683,8 +683,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image8 = Image.open('servicesmonday.jpg')
-            image8 = image8.resize((350, 350))
+            image8 = Image.open('servicesmonday1.jpg')
+            image8 = image8.resize((410, 410))
             st.image(image8)
         with col3:
             st.write(' ')         
@@ -695,8 +695,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image9 = Image.open('servicestuesday.jpg')
-            image9 = image9.resize((350, 350))
+            image9 = Image.open('servicestuesday1.jpg')
+            image9 = image9.resize((410, 410))
             st.image(image9)
         with col3:
             st.write(' ')    
@@ -707,8 +707,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image10 = Image.open('serviceswednesday.jpg')
-            image10 = image10.resize((350, 350))
+            image10 = Image.open('serviceswednesday1.jpg')
+            image10 = image10.resize((410, 410))
             st.image(image10)
         with col3:
             st.write(' ')      
@@ -719,8 +719,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image11 = Image.open('servicesthursday.jpg')
-            image11 = image11.resize((350, 350))
+            image11 = Image.open('servicesthursday1.jpg')
+            image11 = image11.resize((410, 410))
             st.image(image11)
         with col3:
             st.write(' ') 
@@ -731,8 +731,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image12 = Image.open('servicesfriday.jpg')
-            image12 = image12.resize((325, 325))
+            image12 = Image.open('servicesfriday1.jpg')
+            image12 = image12.resize((410, 410))
             st.image(image12)
         with col3:
             st.write(' ')   
