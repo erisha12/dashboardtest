@@ -475,18 +475,17 @@ def weeklystat():
             #st.write(' ') 
 
     elif (option == 'Packets'):
-        col1, col2, col3, col4 = st.columns(4) 
+        
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['packet'], color_discrete_sequence =['skyblue'],
-                            labels={'x': 'Day', 'y':'No. of Packets'}))
+            image = Image.open('weeklypacket.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
             st.write(' ') 
-        with col4:
-            st.write(' ') 
         
-
     # Breakdown of no. of entities & services at different times of day -> line graph
 
     df = pd.read_csv("weeklybreakdown.csv", sep="|")
@@ -496,27 +495,37 @@ def weeklystat():
         ('Entities', 'Services'))
 
     if (option1 == 'Entities'):
-        col1, col2, col3, col4 = st.columns(4) 
+        
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['orgs'], color_discrete_sequence =['plum'],
-                            labels={'x': 'Day', 'y':'No. of Entities'}))
+            image = Image.open('weeklyentity.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
             st.write(' ') 
-        with col4:
-            st.write(' ') 
+        
+        #col1, col2, col3, col4 = st.columns(4) 
+        #with col1: 
+           # st.write(' ') 
+        #with col2: 
+            #st.write(px.bar(x= df['time'], y=df['orgs'], color_discrete_sequence =['plum'],
+                            #labels={'x': 'Day', 'y':'No. of Entities'}))
+       # with col3:
+           # st.write(' ') 
+        #with col4:
+            #st.write(' ') 
 
     elif (option1 == 'Services'):
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['ports'], color_discrete_sequence =['plum'],
-                            labels={'x': 'Day', 'y':'No. of Services'}))
+            image = Image.open('weeklyservice.jpg')
+            image = image.resize((1300, 900))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
             st.write(' ') 
 
 
