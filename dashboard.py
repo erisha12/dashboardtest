@@ -560,77 +560,44 @@ def weeklystat():
     
     if (option2 == 'Monday'):
 
-        df = pd.read_csv("csventitiesunburstmonday.csv", sep="|")
+        #df = pd.read_csv("csventitiesunburstmonday.csv", sep="|")
     
-        df["time"] = "Monday"
-        df = df.reset_index()
+        #df["time"] = "Monday"
+        #df = df.reset_index()
     
-        fig = px.sunburst(df,
-                          path=["time", "org"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
+        #fig = px.sunburst(df,
+                          #path=["time", "org"],
+                          #values='byte',
+                          #title="", color_continuous_scale="sunset")
         
-        st.plotly_chart(fig,use_container_width=True)
+        #st.plotly_chart(fig,use_container_width=True)
+        
+        image3 = Image.open('entitiesmonday.jpg')
+        st.image(image3)
         
 
     elif (option2 == 'Tuesday'):
         
-        df = pd.read_csv("csventitiesunbursttuesday.csv", sep="|")
-    
-        df["time"] = "Tuesday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "org"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image4 = Image.open('entitiestuesday.jpg')
+        st.image(image4)
     
     
     elif (option2 == 'Wednesday'):
         
-        df = pd.read_csv("csventitiesunburstwednesday.csv", sep="|")
-    
-        df["time"] = "Wednesday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "org"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image5 = Image.open('entitieswednesday.jpg')
+        st.image(image5)
         
     
     elif (option2 == 'Thursday'):
         
-        df = pd.read_csv("csventitiesunburstthursday.csv", sep="|")
-    
-        df["time"] = "Thursday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "org"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image6 = Image.open('entitiesthursday.jpg')
+        st.image(image6)
     
     
     elif (option2 == 'Friday'):
         
-        df = pd.read_csv("csventitiesunburstfriday.csv", sep="|")
-    
-        df["time"] = "Friday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "org"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image7 = Image.open('entitiesfriday.jpg')
+        st.image(image7)
 
 
     # df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/weeklysunburstcompanies.csv", sep="|")
@@ -662,77 +629,32 @@ def weeklystat():
     
     if (option3 == 'Monday'):
 
-        df = pd.read_csv("csvdailytimesunburstmonday.csv", sep="|")
-    
-        df["time"] = "Monday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "high", "service"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image8 = Image.open('servicesmonday.jpg')
+        st.image(image8)
         
 
     elif (option3 == 'Tuesday'):
         
-        df = pd.read_csv("csvdailytimesunbursttuesday.csv", sep="|")
-    
-        df["time"] = "Tuesday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "high", "service"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image9 = Image.open('servicestuesday.jpg')
+        st.image(image9)
     
     
     elif (option3 == 'Wednesday'):
         
-        df = pd.read_csv("csvdailytimesunburstwednesday.csv", sep="|")
-    
-        df["time"] = "Wednesday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "high", "service"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image10 = Image.open('serviceswednesday.jpg')
+        st.image(image10)
         
     
     elif (option3 == 'Thursday'):
         
-        df = pd.read_csv("csvdailytimesunburstthursday.csv", sep="|")
-    
-        df["time"] = "Thursday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "high", "service"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image11 = Image.open('servicesthursday.jpg')
+        st.image(image11)
     
     
     elif (option3 == 'Friday'):
         
-        df = pd.read_csv("csvdailytimesunburstfriday.csv", sep="|")
-    
-        df["time"] = "Friday"
-        df = df.reset_index()
-    
-        fig = px.sunburst(df,
-                          path=["time", "high", "service"],
-                          values='byte',
-                          title="", color_continuous_scale="sunset")
-        
-        st.plotly_chart(fig,use_container_width=True)
+        image12 = Image.open('servicesfriday.jpg')
+        st.image(image12)
 
 
     # df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/weeklysunburstservices.csv", sep="|")
