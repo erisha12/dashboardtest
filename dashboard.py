@@ -664,7 +664,7 @@ def weeklystat():
         
         image12 = Image.open('servicesfriday.jpg')
         #st.image(image12)
-        image12 = image12.resize((700, 700))
+        image12 = image12.resize((500, 500))
         st.image(image12)
 
 
