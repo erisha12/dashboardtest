@@ -103,8 +103,8 @@ def dailystat():
     st.caption('- Afternoon: 2pm-4pm')
     st.caption('- Evening: 5pm-7pm')
 
-    image = Image.open('imagetest.jpg')
-    st.image(image, caption='Caption Test')
+    #image = Image.open('imagetest.jpg')
+    #st.image(image, caption='Caption Test')
     
     # Daily breakdown
 
@@ -202,18 +202,23 @@ def dailystat():
         ('Technical', 'High-Level'))
 
     if (option1 == 'Technical'):
-        df = pd.read_csv("dailysankey.csv", sep="|")
-        cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
-        fig = genSankey(df,cat,"byte", '')
+        #df = pd.read_csv("dailysankey.csv", sep="|")
+        #cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
+        #fig = genSankey(df,cat,"byte", '')
 
-        st.plotly_chart(fig,use_container_width=True)
+        #st.plotly_chart(fig,use_container_width=True)
+        image1 = Image.open('dailysankey.jpg')
+        st.image(image1)
 
     elif (option1 == 'High-Level'):
-        df = pd.read_csv("highleveldailysankey.csv", sep="|")
-        cat = ["UNSW EE Building", "day", "service", "org", "country"]
-        fig = genSankey(df,cat,"byte", '')
+        #df = pd.read_csv("highleveldailysankey.csv", sep="|")
+        #cat = ["UNSW EE Building", "day", "service", "org", "country"]
+        #fig = genSankey(df,cat,"byte", '')
     
-        st.plotly_chart(fig,use_container_width=True)
+        #st.plotly_chart(fig,use_container_width=True)
+        
+        image2 = Image.open('dailysankeyhigh.jpg')
+        st.image(image2)
 
         st.write('Categorised By Service Type')
         st.caption('- Conferencing: plethora, cleanerliverc, twrpc')
@@ -512,18 +517,24 @@ def weeklystat():
         ('Technical', 'High-Level'))
 
     if (option1 == 'Technical'):
-        df = pd.read_csv("weeklysankey.csv", sep="|")
-        cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
-        fig = genSankey(df,cat,"byte", '')
+        #df = pd.read_csv("weeklysankey.csv", sep="|")
+        #cat = ["UNSW EE Building", "time", "protocol", "service", "org", "country"]
+        #fig = genSankey(df,cat,"byte", '')
 
-        st.plotly_chart(fig,use_container_width=True)
+        #st.plotly_chart(fig,use_container_width=True)
+        
+        image1 = Image.open('weeklysankey.jpg')
+        st.image(image1)
 
     elif (option1 == 'High-Level'):
-        df = pd.read_csv("highlevelweeklysankey.csv", sep="|")
-        cat = ["UNSW EE Building", "day", "service", "org", "country"]
-        fig = genSankey(df,cat,"byte", '')
+        #df = pd.read_csv("highlevelweeklysankey.csv", sep="|")
+        #cat = ["UNSW EE Building", "day", "service", "org", "country"]
+        #fig = genSankey(df,cat,"byte", '')
     
-        st.plotly_chart(fig,use_container_width=True)
+        #st.plotly_chart(fig,use_container_width=True)
+        
+        image2 = Image.open('weeklysankeyhigh.jpg')
+        st.image(image2)
 
         st.write('Categorised By Service Type')
         st.caption('- Conferencing: plethora, cleanerliverc, twrpc')
