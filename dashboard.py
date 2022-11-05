@@ -633,7 +633,7 @@ def weeklystat():
             st.write(' ') 
         with col2: 
             image7 = Image.open('entitiesfriday.jpg')
-            image7 = image7.resize((400, 400))
+            image7 = image7.resize((450, 450))
             st.image(image7)
         with col3:
             st.write(' ')  
