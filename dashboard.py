@@ -597,7 +597,7 @@ def weeklystat():
             st.write(' ') 
         with col2: 
             image3 = Image.open('entitiesmonday1.jpg')
-            image3 = image3.resize((350, 350))
+            image3 = image3.resize((410, 410))
             st.image(image3)
         with col3:
             st.write(' ')      
@@ -608,8 +608,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image4 = Image.open('entitiestuesday.jpg')
-            image4 = image4.resize((350, 350))
+            image4 = Image.open('entitiestuesday1.jpg')
+            image4 = image4.resize((410, 410))
             st.image(image4)
         with col3:
             st.write(' ')   
@@ -620,8 +620,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image5 = Image.open('entitieswednesday.jpg')
-            image5 = image5.resize((350, 350))
+            image5 = Image.open('entitieswednesday1.jpg')
+            image5 = image5.resize((410, 410))
             st.image(image5)
         with col3:
             st.write(' ')     
@@ -632,8 +632,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image6 = Image.open('entitiesthursday.jpg')
-            image6 = image6.resize((350, 350))
+            image6 = Image.open('entitiesthursday1.jpg')
+            image6 = image6.resize((410, 410))
             st.image(image6)
         with col3:
             st.write(' ')      
@@ -644,8 +644,8 @@ def weeklystat():
         with col1: 
             st.write(' ') 
         with col2: 
-            image7 = Image.open('entitiesfriday.jpg')
-            image7 = image7.resize((350, 350))
+            image7 = Image.open('entitiesfriday1.jpg')
+            image7 = image7.resize((410, 410))
             st.image(image7)
         with col3:
             st.write(' ')  
