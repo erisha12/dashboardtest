@@ -13,6 +13,7 @@ import pandas as pd
 import plotly
 import plotly.express as px
 import streamlit as st
+from PIL import Image
 #from plotdailysankey import *
 
 
