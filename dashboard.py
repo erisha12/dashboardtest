@@ -628,16 +628,14 @@ def weeklystat():
     
     elif (option2 == 'Friday'):
         
-        col1, col2, col3, col4 = st.columns(4) 
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
             image7 = Image.open('entitiesfriday.jpg')
-            image7 = image7.resize((300, 300))
+            image7 = image7.resize((400, 400))
             st.image(image7)
         with col3:
-            st.write(' ') 
-        with col4:
             st.write(' ')  
 
     # df = pd.read_csv("/Users/erishachand/Desktop/UNIVERSITY/T3 2022/ThesisC/Code/weeklysunburstcompanies.csv", sep="|")
