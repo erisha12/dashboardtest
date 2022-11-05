@@ -452,16 +452,27 @@ def weeklystat():
         ('Bytes', 'Packets'))
 
     if (option == 'Bytes'):
-        col1, col2, col3, col4 = st.columns(4) 
+        
+        col1, col2, col3 = st.columns(3) 
         with col1: 
             st.write(' ') 
         with col2: 
-            st.write(px.bar(x= df['time'], y=df['byte'], color_discrete_sequence =['skyblue'],
-                            labels={'x': 'Day', 'y':'No. of Bytes (GB)'}))
+            image = Image.open('weeklybyte.jpg')
+            image = image.resize((650, 450))
+            st.image(image)
         with col3:
-            st.write(' ') 
-        with col4:
-            st.write(' ') 
+            st.write(' ')  
+            
+        #col1, col2, col3, col4 = st.columns(4) 
+        #with col1: 
+            #st.write(' ') 
+        #with col2: 
+            #st.write(px.bar(x= df['time'], y=df['byte'], color_discrete_sequence =['skyblue'],
+                            #labels={'x': 'Day', 'y':'No. of Bytes (GB)'}))
+        #with col3:
+            #st.write(' ') 
+        #with col4:
+            #st.write(' ') 
 
     elif (option == 'Packets'):
         col1, col2, col3, col4 = st.columns(4) 
