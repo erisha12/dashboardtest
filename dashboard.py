@@ -103,6 +103,9 @@ def dailystat():
     st.caption('- Afternoon: 2pm-4pm')
     st.caption('- Evening: 5pm-7pm')
 
+    image = Image.open('imagetest.jpg')
+    st.image(image, caption='Caption Test')
+    
     # Daily breakdown
 
     # Breakdown of flow origin, no. of GB & packets transferred
