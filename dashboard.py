@@ -209,6 +209,8 @@ def dailystat():
         #st.plotly_chart(fig,use_container_width=True)
         image1 = Image.open('dailysankey.jpg')
         st.image(image1)
+        
+        st.markdown('#')
 
     elif (option1 == 'High-Level'):
         #df = pd.read_csv("highleveldailysankey.csv", sep="|")
@@ -525,6 +527,8 @@ def weeklystat():
         
         image1 = Image.open('weeklysankey.jpg')
         st.image(image1)
+        
+        st.markdown('#')
 
     elif (option1 == 'High-Level'):
         #df = pd.read_csv("highlevelweeklysankey.csv", sep="|")
