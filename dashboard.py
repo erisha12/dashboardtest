@@ -678,7 +678,7 @@ def weeklystat():
             st.image(image8)
         with col3:
             st.write(' ') 
-         with col4:
+        with col4:
             st.write(' ')         
 
     elif (option3 == 'Tuesday'):
@@ -706,7 +706,7 @@ def weeklystat():
             st.image(image10)
         with col3:
             st.write(' ') 
-         with col4:
+        with col4:
             st.write(' ')         
     
     elif (option3 == 'Thursday'):
@@ -720,7 +720,7 @@ def weeklystat():
             st.image(image11)
         with col3:
             st.write(' ') 
-         with col4:
+        with col4:
             st.write(' ')     
     
     elif (option3 == 'Friday'):
