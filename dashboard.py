@@ -573,30 +573,35 @@ def weeklystat():
         #st.plotly_chart(fig,use_container_width=True)
         
         image3 = Image.open('entitiesmonday.jpg')
+        image3 = image3.resize((700, 700))
         st.image(image3)
         
 
     elif (option2 == 'Tuesday'):
         
         image4 = Image.open('entitiestuesday.jpg')
+        image4 = image4.resize((700, 700))
         st.image(image4)
     
     
     elif (option2 == 'Wednesday'):
         
         image5 = Image.open('entitieswednesday.jpg')
+        image5 = image5.resize((700, 700))
         st.image(image5)
         
     
     elif (option2 == 'Thursday'):
         
         image6 = Image.open('entitiesthursday.jpg')
+        image6 = image6.resize((700, 700))
         st.image(image6)
     
     
     elif (option2 == 'Friday'):
         
         image7 = Image.open('entitiesfriday.jpg')
+        image7 = image7.resize((700, 700))
         st.image(image7)
 
 
@@ -630,30 +635,36 @@ def weeklystat():
     if (option3 == 'Monday'):
 
         image8 = Image.open('servicesmonday.jpg')
+        image8 = image8.resize((700, 700))
         st.image(image8)
         
 
     elif (option3 == 'Tuesday'):
         
         image9 = Image.open('servicestuesday.jpg')
+        image9 = image9.resize((700, 700))
         st.image(image9)
     
     
     elif (option3 == 'Wednesday'):
         
         image10 = Image.open('serviceswednesday.jpg')
+        image10 = image10.resize((700, 700))
         st.image(image10)
         
     
     elif (option3 == 'Thursday'):
         
         image11 = Image.open('servicesthursday.jpg')
+        image11 = image11.resize((700, 700))
         st.image(image11)
     
     
     elif (option3 == 'Friday'):
         
         image12 = Image.open('servicesfriday.jpg')
+        #st.image(image12)
+        image12 = image12.resize((700, 700))
         st.image(image12)
 
 
