@@ -458,7 +458,7 @@ def weeklystat():
             st.write(' ') 
         with col2: 
             image = Image.open('weeklybyte.jpg')
-            image = image.resize((650, 450))
+            image = image.resize((1300, 900))
             st.image(image)
         with col3:
             st.write(' ')  
