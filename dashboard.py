@@ -207,10 +207,7 @@ def dailystat():
         #fig = genSankey(df,cat,"byte", '')
 
         #st.plotly_chart(fig,use_container_width=True)
-        #image1 = Image.open('dailysankey.jpg')
-        #st.image(image1)
         image1 = Image.open('dailysankey.jpg')
-        image1 = image1.resize((825, 340))
         st.image(image1)
 
     elif (option1 == 'High-Level'):
